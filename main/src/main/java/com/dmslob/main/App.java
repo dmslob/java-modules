@@ -8,5 +8,9 @@ public class App {
         System.out.println(userDao.findAll());
 
         System.out.println(userDao.getAdmin().getKey());
+
+        Module userDaoModule = UserDao.class.getModule();
+        System.out.println(userDaoModule.isNamed());
+        System.out.println(userDaoModule.getName());
     }
 }
